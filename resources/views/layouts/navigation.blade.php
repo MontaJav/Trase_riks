@@ -34,7 +34,7 @@
     <!-- Logo -->
     <div class="shrink-0 flex items-center">
         <a href="{{ route('projekti') }}">
-            <h1>RIKS</h1>
+            <h1>TRASEJAMĪBAS RĪKS</h1>
         </a>
     </div>
 
