@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "kalendars";
+
+body {
+    background: #E7DEDB;
+    color: #000000;
+    font-family: Roboto, sans-serif;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    padding: 10px 20px;
+    width: 400px;
+    margin: 20px auto auto;
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center;
+}
+
+#autentifikacija {
+    .bilde {
+        width: calc(100% - 400px);
+        background-image: url("/public/images/fons.png");
+        background-size: cover;
+        background-position: center;
+    }
+    .forma {
+        margin-top: 65px;
+        width: 450px;
+    }
+}
+
+.forma {
+    width: 500px;
+    padding: 35px;
+
+    h2 {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28.13px;
+        text-align: center;
+    }
+
+    input, select, textarea {
+        border-radius: 5px;
+        border: 1px solid black;
+        width: 100%;
+        margin-bottom: 10px;
+
+        &[type="checkbox"] {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    button {
+        border-radius: 5px;
+        border: 1px solid black;
+        background: #000000;
+        color: white;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    a {
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+nav {
+    background: #C5A0A0;
+    height: 76px;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: 21px 40px;
+
+    h1 {
+        font-size: 24px;
+    }
+
+    img {
+        height: 36px;
+    }
+
+    a.profile {
+        text-shadow: 0 4px 4px black;
+    }
+
+    a.button {
+        text-decoration: none;
+        background: #DBB4B4;
+        border-radius: 5px;
+        padding: 16px 25px;
+    }
+}
+
+form {
+    display: block;
+    margin: auto;
+}
+
+#container {
+    width: 70%;
+    margin: auto;
+
+    header {
+        text-align: center;
+    }
+
+    .search, .uzd-nos {
+        display: flex;
+        justify-content: space-between;
+        text-align: unset;
+
+        h3 {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        input {
+            width: 400px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-right: 30px;
+            background: #F9F3F1;
+        }
+
+        .button {
+            padding: 10px 50px;
+            border-radius: 5px;
+            background: #000000;
+            color: white;
+        }
+    }
+
+    table {
+        td {
+            padding: 10px 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: #C5A0A0;
+            color: black;
+            text-decoration: none;
+            margin: 10px 20px;
+            display: block;
+            width: max-content;
+        }
+    }
+
+    .uzd-nos {
+        margin-bottom: 20px;
+
+        .button {
+            padding: 10px 30px;
+        }
+    }
+}
+
+.pielikumi, .komentars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+    .actions {
+        display: flex;;
+
+        a {
+            width: fit-content;
+            margin-top: unset;
+            margin-left: 10px;
+        }
+    }
+}
+
+table td.actions {
+    display: flex;
+    flex-direction: row;
+
+    .button {
+        margin-left: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    #container {
+        width: 90%;
+    }
+    table td.actions:not(.row) {
+        flex-direction: column;
+    }
+}

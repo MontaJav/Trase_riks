@@ -1,0 +1,37 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/anastasiagoncharova/.nvm/versions/node/v10.24.1/bin/node',
+1 verbose cli   '/Users/anastasiagoncharova/.nvm/versions/node/v10.24.1/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'dev' ]
+2 info using npm@6.14.12
+3 info using node@v10.24.1
+4 verbose run-script [ 'predev', 'dev', 'postdev' ]
+5 info lifecycle @~predev: @
+6 info lifecycle @~dev: @
+7 verbose lifecycle @~dev: unsafe-perm in lifecycle true
+8 verbose lifecycle @~dev: PATH: /Users/anastasiagoncharova/.nvm/versions/node/v10.24.1/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/anastasiagoncharova/PhpstormProjects/uzdevumi/node_modules/.bin:/Users/anastasiagoncharova/.nvm/versions/node/v10.24.1/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/opt/local/bin:/opt/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+9 verbose lifecycle @~dev: CWD: /Users/anastasiagoncharova/PhpstormProjects/uzdevumi
+10 silly lifecycle @~dev: Args: [ '-c', 'vite' ]
+11 silly lifecycle @~dev: Returned: code: 1  signal: null
+12 info lifecycle @~dev: Failed to exec dev script
+13 verbose stack Error: @ dev: `vite`
+13 verbose stack Exit status 1
+13 verbose stack     at EventEmitter.<anonymous> (/Users/anastasiagoncharova/.nvm/versions/node/v10.24.1/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:332:16)
+13 verbose stack     at EventEmitter.emit (events.js:198:13)
+13 verbose stack     at ChildProcess.<anonymous> (/Users/anastasiagoncharova/.nvm/versions/node/v10.24.1/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+13 verbose stack     at ChildProcess.emit (events.js:198:13)
+13 verbose stack     at maybeClose (internal/child_process.js:982:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:259:5)
+14 verbose pkgid @
+15 verbose cwd /Users/anastasiagoncharova/PhpstormProjects/uzdevumi
+16 verbose Darwin 23.4.0
+17 verbose argv "/Users/anastasiagoncharova/.nvm/versions/node/v10.24.1/bin/node" "/Users/anastasiagoncharova/.nvm/versions/node/v10.24.1/bin/npm" "run" "dev"
+18 verbose node v10.24.1
+19 verbose npm  v6.14.12
+20 error code ELIFECYCLE
+21 error errno 1
+22 error @ dev: `vite`
+22 error Exit status 1
+23 error Failed at the @ dev script.
+23 error This is probably not a problem with npm. There is likely additional logging output above.
+24 verbose exit [ 1, true ]
